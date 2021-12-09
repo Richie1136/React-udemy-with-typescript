@@ -1,7 +1,12 @@
-const Todos: React.FC<{ items: string[] }> = ({ children }) => {
+const Todos: React.FC<{ items: string[] }> = (props) => {
   return (
     <div>
-      <ul>{children}</ul>
+      <ul>
+        {props.items.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+      <p>{props.children}</p>
     </div>
   );
 };
