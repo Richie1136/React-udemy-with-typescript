@@ -1,4 +1,4 @@
-const Todos: React.FC = ({ children }) => {
+const Todos: React.FC<{ items: string[] }> = ({ children }) => {
   return (
     <div>
       <ul>{children}</ul>
