@@ -1,10 +1,7 @@
-const Todos = () => {
+const Todos: React.FC = (props) => {
   return (
     <div>
-      <ul>
-        <li>Learn React</li>
-        <li>Learn Typescript</li>
-      </ul>
+      <ul>{}</ul>
     </div>
   );
 };
