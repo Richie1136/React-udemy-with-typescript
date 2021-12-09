@@ -1,7 +1,7 @@
-const Todos: React.FC = (props) => {
+const Todos: React.FC = ({ children }) => {
   return (
     <div>
-      <ul>{}</ul>
+      <ul>{children}</ul>
     </div>
   );
 };
