@@ -1,8 +1,6 @@
 import "./App.css";
 import Todos from "./components/todos/Todos";
-import Todo from "./models/todo";
 import NewTodo from "./components/newtodo/NewTodo";
-import { useState } from "react";
 
 // All commented out code is used inside of the todos-context.tsx file
 
@@ -23,8 +21,8 @@ function App() {
   // };
   return (
     <div className="App">
-      <NewTodo onAddTodo={handleAddTodo} />
-      <Todos items={todos} handleRemoveTodo={handleRemoveTodo} />
+      <NewTodo />
+      <Todos />
     </div>
   );
 }
