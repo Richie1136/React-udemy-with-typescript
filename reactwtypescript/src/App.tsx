@@ -1,6 +1,7 @@
 import "./App.css";
 import Todos from "./components/todos/Todos";
 import NewTodo from "./components/newtodo/NewTodo";
+import TodosContextProvider from "./store/todos-context";
 
 // All commented out code is used inside of the todos-context.tsx file
 
@@ -20,10 +21,10 @@ function App() {
   //   });
   // };
   return (
-    <div className="App">
+    <TodosContextProvider>
       <NewTodo />
       <Todos />
-    </div>
+    </TodosContextProvider>
   );
 }
 
