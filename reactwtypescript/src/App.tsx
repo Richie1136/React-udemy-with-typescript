@@ -13,6 +13,7 @@ function App() {
       return prevState.concat(newTodo);
     });
   };
+
   return (
     <div className="App">
       <NewTodo onAddTodo={handleAddTodo} />
