@@ -1,5 +1,7 @@
+import classes from "./TodosItem.module.css";
+
 const TodosItem: React.FC<{ text: string }> = (props) => {
-  return <li>{props.text}</li>;
+  return <li className={classes.item}>{props.text}</li>;
 };
 
 export default TodosItem;
